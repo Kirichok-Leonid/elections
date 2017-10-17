@@ -20,7 +20,6 @@ class CreateQuestionsTable extends Migration
             $table->integer('number')->nullable();
             $table->integer('question_type_id')->unsigned();
             $table->boolean('decision');
-            $table->timestamps();
 
             $table->foreign('session_id')->references('id')->on('sessions')
                 ->onUpdate('cascade')->onDelete('cascade');

@@ -18,7 +18,6 @@ class CreateVotesTable extends Migration
             $table->integer('question_id')->unsigned();
             $table->integer('delegate_id')->unsigned();
             $table->enum('status', ['yes', 'no', 'abstained', 'missing', 'not voted']);
-            $table->timestamps();
 
             $table->foreign('question_id')->references('id')->on('questions')
                 ->onUpdate('cascade')->onDelete('cascade');

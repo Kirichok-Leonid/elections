@@ -19,7 +19,6 @@ class CreateSessionsTable extends Migration
             $table->integer('soviet_id')->unsigned();
             $table->integer('session_type')->unsigned();
             $table->date('date');
-            $table->timestamps();
 
             $table->foreign('soviet_id')->references('id')->on('soviets')
                 ->onUpdate('cascade')->onDelete('cascade');

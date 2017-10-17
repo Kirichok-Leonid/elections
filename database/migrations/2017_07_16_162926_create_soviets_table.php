@@ -17,7 +17,6 @@ class CreateSovietsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->integer('convocation')->nullable();
-            $table->timestamps();
         });
     }
 
