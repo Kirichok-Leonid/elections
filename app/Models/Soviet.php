@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Soviet extends Model
 {
+    protected $table = 'soviets';
+    public $timestamps = false;
     /**
      * The attributes that are mass assignable.
      *

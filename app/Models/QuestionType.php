@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class QuestionType extends Model
 {
+    protected $table ='question_types';
+    public $timestamps = false;
+
     /**
      * The attributes that are mass assignable.
      *

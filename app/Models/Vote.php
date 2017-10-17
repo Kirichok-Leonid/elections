@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Vote extends Model
 {
+    protected $table = 'votes';
+    public $timestamps = false;
+
     /**
      * The attributes that are mass assignable.
      *

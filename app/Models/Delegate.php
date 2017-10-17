@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Delegate extends Model
 {
+    protected $table = 'delegates';
+    public $timestamps = false;
+
     /**
      * The attributes that are mass assignable.
      *
